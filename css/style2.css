@@ -6,6 +6,7 @@ body {
 			background-attachment: fixed;
 			background-size: cover;
 			background-position:bottom;
+			background-position-y: -190px;
         }
         #imageContainer {
             position: relative;
@@ -32,7 +33,7 @@ body {
             top: 10px;
             right: 10px;
             font-size: 36px;
-			color:yellow;
+			color:#000;
 			opacity: 0.6;
         }
 
