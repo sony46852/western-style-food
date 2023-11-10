@@ -75,6 +75,7 @@
 
                     //activeDraggable.style.width = 'auto';
                     //activeDraggable.style.height = 'auto';
+
                     activeDraggable.style.left = x + 'px';
                     activeDraggable.style.top = y + 'px';
                 }
@@ -99,22 +100,29 @@
     const completeButton = document.getElementById('completeButton');
 
     closeButton.addEventListener('click', () => {
-        startTimer();
-        dialog.close();
-        draggables.forEach(draggable => {
-            const maxX = window.innerWidth - draggable.clientWidth;
-            const maxY = window.innerHeight - draggable.clientHeight;
+    startTimer();
+    dialog.close();
+    draggables.forEach(draggable => {
+        const leftAreaWidth = 500; // 設定左邊區塊
+        const rightAreaWidth = 500; // 設定右邊區塊
+        const maxXLeft = leftAreaWidth - draggable.clientWidth;
+        const maxXRight = window.innerWidth - rightAreaWidth;
+        const maxY = window.innerHeight - draggable.clientHeight;
 
-            const randomX = Math.random() * maxX;
-            const randomY = Math.random() * maxY;
+        const randomXLeft = Math.random() * maxXLeft;
+        const randomXRight = maxXRight + Math.random() * rightAreaWidth;
+        const randomY = Math.random() * maxY;
 
-            draggable.style.left = randomX + 'px';
-            draggable.style.top = randomY + 'px';
-            draggable.style.transform = 'rotate(0deg)';
-        });
+        // 判斷圖片放在左邊還是右邊
+        const randomX = Math.random() < 0.5 ? randomXLeft : randomXRight;
 
-        completeButton.style.display = 'block'; // 顯示"完成"按鈕
+        draggable.style.left = randomX + 'px';
+        draggable.style.top = randomY + 'px';
+        draggable.style.transform = 'rotate(0deg)';
     });
+
+    completeButton.style.display = 'block'; // 顯示完成按鈕
+});
 	
 	//鎖定F12
 	document.body.onkeydown = function(e){
