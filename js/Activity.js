@@ -99,7 +99,7 @@
     const closeButton = document.getElementById('closeButton');
     const completeButton = document.getElementById('completeButton');
 
-    closeButton.addEventListener('click', () => {
+   /* closeButton.addEventListener('click', () => {
     startTimer();
     dialog.close();
     draggables.forEach(draggable => {
@@ -122,7 +122,7 @@
     });
 
     completeButton.style.display = 'block'; // 顯示完成按鈕
-});
+});*/
 	
 	//鎖定F12
 	document.body.onkeydown = function(e){
