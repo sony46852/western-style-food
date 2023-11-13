@@ -7,9 +7,12 @@ body {
 			background-size: cover;
 			background-position:bottom;
 			background-position-y: -190px;
+
         }
         #imageContainer {
             position: relative;
+			height:1080px;
+			
         }
 
         .draggable {
@@ -51,6 +54,72 @@ body {
             color: #fff;
             cursor: pointer;
         }
+		#image1{
+			top:43%;
+			left:19.5%;
+		}
+		#image2{
+			bottom:40%;
+			left:12.5%;
+		}
+		#image3{
+			bottom:40%;
+			left:10.5%;
+		}
+		#image4{
+			bottom:40%;
+			left:14%;
+		}
+		#image5{
+			bottom:38%;
+			left:19.5%;
+			z-index:2
+		}
+		#image6{
+			bottom:40%;
+			left:23%;
+		}
+		#image7{
+			bottom:38%;
+			left:12%;
+		}
+		#image8{
+			bottom:38%;
+			left:22%;
+		}
+		#image9{
+			bottom:40%;
+			left:15.5%;
+		}
+		#image10{
+			bottom:40%;
+			left:21%;
+		}
+		#image11{
+			bottom:38%;
+			left:14%;
+		}
+		#image12{
+			bottom:40%;
+			left:17%;
+		}
+		#image13{
+			bottom:38%;
+			left:16%;
+		}
+		#image14{
+			bottom:50%;
+			left:80%;
+		}
+		#image15{
+			bottom:28%;
+			left:82%;
+			z-index:1;
+		}
+		#image16{
+			bottom:25%;
+			left:80%;
+		}
 		//圖片
 		.btn-21,
 		.btn-21 *,
