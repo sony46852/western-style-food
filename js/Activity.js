@@ -99,7 +99,7 @@
     const closeButton = document.getElementById('closeButton');
     const completeButton = document.getElementById('completeButton');
 
-   /* closeButton.addEventListener('click', () => {
+    closeButton.addEventListener('click', () => {
     startTimer();
     dialog.close();
     draggables.forEach(draggable => {
@@ -109,20 +109,20 @@
         const maxXRight = window.innerWidth - rightAreaWidth;
         const maxY = window.innerHeight - draggable.clientHeight;
 
-        const randomXLeft = Math.random() * maxXLeft;
-        const randomXRight = maxXRight + Math.random() * rightAreaWidth;
-        const randomY = Math.random() * maxY;
+       // const randomXLeft = Math.random() * maxXLeft;
+       // const randomXRight = maxXRight + Math.random() * rightAreaWidth;
+       // const randomY = Math.random() * maxY;
 
         // 判斷圖片放在左邊還是右邊
-        const randomX = Math.random() < 0.5 ? randomXLeft : randomXRight;
+       // const randomX = Math.random() < 0.5 ? randomXLeft : randomXRight;
 
-        draggable.style.left = randomX + 'px';
-        draggable.style.top = randomY + 'px';
-        draggable.style.transform = 'rotate(0deg)';
+       // draggable.style.left = randomX + 'px';
+       // draggable.style.top = randomY + 'px';
+       // draggable.style.transform = 'rotate(0deg)';
     });
 
     completeButton.style.display = 'block'; // 顯示完成按鈕
-});*/
+});
 	
 	//鎖定F12
 	document.body.onkeydown = function(e){
